@@ -38,21 +38,26 @@ event.preventDefault();
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
   // TODO: suss out the item picked from the select list
+  let form = document.getElementById("catalog")
   let product;
   let options = document.querySelectorAll("option"); 
-  options.forEach(element => {
-    element.addEventListener('selected', function(event){
-      if (event = true){
-        product = event.value
-      }
-    })
+ for(let i = 0; i < options.length; i++){
+  
+ if (options[i].selected = true){
+    let product = options[i].value;
   }
-  let quantity = document.getElementById('quantity');
-
-  // TODO: get the quantity
-
-  // TODO: using those, add one item to the Cart
 }
+ // TODO: get the quantity
+  let quantity = document.getElementById('quantity');
+  
+  // TODO: using those, add one item to the Cart
+  form.addEventListener('submit', function(event){
+let quantity = event.target.quantity.value
+new CartItem(product,quantity)
+  })
+}
+let form = document.getElementById("catalog")
+console.log(form)
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
 // function updateCounter() { }
