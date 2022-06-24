@@ -1,1 +1,21 @@
 /* TODO: Make it awesome */
+header{
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+nav{
+    margin-top: 20px;
+}
+li{
+    display: inline;
+}
+
+main{
+    margin-top: 5rem;
+    height: 50rem;
+}
+
+body{
+    height: 100%;
+}
